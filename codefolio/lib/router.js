@@ -42,6 +42,7 @@ Router.map(function() {
 		path:'/admin/projects/add',
 		template:'add_project'
 	});
+	
 	this.route('edit_project', {
 		path:'/admin/projects/:_id/edit',
 		template:'edit_project'
