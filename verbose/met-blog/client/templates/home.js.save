@@ -13,6 +13,6 @@ Template.home.destroyed = () => {
 
 Template.home.helpers({
   exampleHelper: () => {
-    return new Spacebars.SafeString('This text came from a <strong>helper</strong>');
+    return new Spacebars.SafeString('This text came from a <strong>helper</strong>';
   }
 });
