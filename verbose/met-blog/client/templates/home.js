@@ -14,5 +14,12 @@ Template.home.destroyed = () => {
 Template.home.helpers({
   exampleHelper: () => {
     return new Spacebars.SafeString('This text came from a <strong>helper</strong>');
-  }
+  },
+  dataContextHelper: ()=>{
+    return {
+    someText: 'This text was set using a helper of the parent template',
+    someNested: {
+      text: 'That comes from someNested.text'
+}};}
+
 });
