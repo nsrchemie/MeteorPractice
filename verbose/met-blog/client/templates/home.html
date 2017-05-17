@@ -5,4 +5,17 @@ Here is some sample filler text about programming.
 {{/markdown}}
 {{exampleHelper}}
 {{> contextExample dataContextHelper}}
+
+<!-- Other methods involve use of {{#with}}
+e.g.
+{{#with dataContextHelper}}
+  {{> contextExample}}
+{{/with}}
+
+or even eliminate the template just added all the tags to the home template
+
+{{#with dataContextHelper}}
+  <p>{{someText}}</p>
+  <p>{{someNested.text}}</p>
+{{/with}} -->
 </template>

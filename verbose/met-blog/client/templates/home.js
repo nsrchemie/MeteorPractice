@@ -2,8 +2,9 @@ Template.home.created = () => {
   console.log('Created home template');
 };
 
-Template.home.rendered = () => {
+Template.home.rendered = function() {
   console.log('Rendered home template');
+  this.find('p').innerHTML = 'We just replaced the text!';
 };
 
 
