@@ -3,9 +3,31 @@
 ## Welcome to my blog!
 Here is some sample filler text about programming.
 {{/markdown}}
-{{exampleHelper}}
-{{> contextExample dataContextHelper}}
+{{#each postsList}}
+  {{> postInList}}
+{{/each}}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- {{exampleHelper}}
+{{> contextExample dataContextHelper}} -->
+<!-- 
 {{#blockHelperExample false}}
  <span>Some Content</span>
 {{else}}
@@ -14,7 +36,7 @@ Here is some sample filler text about programming.
 
 
 
-
+ -->
 
 
 <!-- Other methods involve use of {{#with}}
