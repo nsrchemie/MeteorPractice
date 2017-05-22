@@ -1,3 +1,4 @@
-Meteor.publish('all-posts', () => {
-  return Posts.find();
+Meteor.publish('limited-posts', () => {
+  return Posts.find({}, {
+    limit: 2});
 });
