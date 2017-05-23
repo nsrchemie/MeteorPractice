@@ -1,4 +1,7 @@
-Meteor.publish('limited-posts', () => {
+Meteor.publish('title-posts',() => {
   return Posts.find({}, {
-    limit: 2});
+    fields: {
+      title: 1
+    }
+  });
 });
