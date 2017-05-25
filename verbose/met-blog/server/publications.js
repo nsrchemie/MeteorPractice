@@ -5,3 +5,13 @@ Meteor.publish('title-posts',() => {
     }
   });
 });
+
+Meteor.publish('lazyload-posts', (limit) => {
+	return Posts.find({}, {
+		limit:limit,
+		fields: {
+			text: 0
+		},
+		sort: {timeCreated:-1}
+		});
+});
